@@ -26,18 +26,18 @@ body {
   font-family: "Poppins", sans-serif;
   background: #e5e5e5;
 }
+.wrapper{
+  width: 100%;
+  border: solid 1px var(--black-color);
+}
 
 .header {
   align-items: center;
-  position: relative;
   background-color: #fff;
   padding: 20px;
   color: #6070ff;
   margin: 0 auto;
-}
-
-nav {
-  width: 100%;
+  position: relative;
 }
 
 ul {
@@ -45,9 +45,6 @@ ul {
 }
 
 .navbar-links {
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
   display: none;
 }
 
@@ -599,13 +596,17 @@ button:disabled {
 
 @media (min-width: 768px) {
   .header {
+    display: flex;
     width: 100%;
-    gap: 80%;
-    background-color: #2230d2;
+    position: fixed;
   }
 
   .navbar-links {
     display: flex;
+    padding-top: 25px;
+  }
+  .active{
+    padding-top: 25px;
   }
 
   .navbar-links ul {
