@@ -26,18 +26,20 @@ body {
   font-family: "Poppins", sans-serif;
   background: #e5e5e5;
 }
-.wrapper{
+
+.wrapper {
   width: 100%;
   border: solid 1px var(--black-color);
 }
 
-.header {
+header {
   align-items: center;
   background-color: #fff;
-  padding: 20px;
+  padding-top: 20px;
   color: #6070ff;
   margin: 0 auto;
   position: relative;
+  width: 100%;
 }
 
 ul {
@@ -62,16 +64,17 @@ ul {
   background-size: cover;
 }
 
-.header a.icon {
+.header-container a.icon {
   background: none;
   position: absolute;
   right: 0;
   top: 0;
   justify-self: center;
-  padding-top: 10px;
   color: #6070ff;
   margin: 5px;
+  padding-top: 10px;
   margin-right: 8%;
+  cursor: pointer;
 }
 
 .active {
@@ -80,6 +83,15 @@ ul {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  margin-left: 24px;
+}
+
+.active:hover {
+  color: #000;
+}
+
+.header a.icon:hover {
+  color: #000;
 }
 
 .social-links {
@@ -595,33 +607,44 @@ button:disabled {
 }
 
 @media (min-width: 768px) {
-  .header {
-    display: flex;
+  header {
     width: 100%;
+    height: 72px;
     position: fixed;
+    display: flex;
+  }
+
+  .header-container {
+    gap: 0;
+    display: flex;
+    margin: 0 -5px;
+  }
+
+  .logo- {
+    flex: none;
   }
 
   .navbar-links {
     display: flex;
-    padding-top: 25px;
   }
-  .active{
-    padding-top: 25px;
+
+  .active {
+    padding-top: 30px;
+    margin-left: 155px;
   }
 
   .navbar-links ul {
     display: flex;
-    gap: 20px;
   }
 
   .navbar-links li {
-    text-decoration: none;
-    padding-left: 50% 90%;
-    margin-left: 100%;
+    margin: 0 5px;
+    padding-left: 320px;
+    display: inline-flex;
   }
 
-  .navbar-links ul > li:hover {
-    background-color: var(--footer-background);
+  .navbar-links li:hover {
+    color: var(--footer-background);
   }
 
   .icon {
@@ -633,7 +656,52 @@ button:disabled {
     background-repeat: no-repeat;
     object-fit: contain;
     background-size: cover;
-    height: 916px;
+    height: fit-content;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    max-width: 544px;
+    max-height: 448px;
+    border-radius: 8px;
+    margin-block: 24px;
+  }
+
+  .project-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .years {
+    padding-right: 50px;
+  }
+
+  .canopy {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .experience {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .desc {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .intro-part {
@@ -659,6 +727,7 @@ button:disabled {
 
   .card-info {
     width: 100%;
+    max-height: 496px;
     max-width: 1156px;
     display: flex;
     flex-direction: row;
