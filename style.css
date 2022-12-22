@@ -104,7 +104,7 @@ ul {
 }
 
 .icons {
-  display: flex;
+  display: block;
   align-content: center;
   width: 100px;
   padding-top: 20px;
@@ -138,7 +138,7 @@ ul {
 
 .intro {
   display: flex;
-  width: 320px;
+  width: 100%;
   height: 140px;
   color: #172b4d;
   line-height: 50px;
@@ -168,7 +168,7 @@ ul {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  width: 340px;
+  width: 100%;
   height: fit-content;
 }
 
@@ -298,7 +298,7 @@ ul {
   border: 1px solid #dfe1e6;
   font-weight: 100;
   font-style: normal;
-  border-start-end-radius: 28%;
+  border-top-right-radius: 122px;
   background-color: #fff;
   display: block;
   height: fit-content;
@@ -449,8 +449,8 @@ button:disabled {
 .contact-form {
   display: flex;
   justify-content: center;
-  width: 375px;
-  height: 779px;
+  width: 100%;
+  height: 855px;
   background-image: url(imgfile/shapes-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -738,10 +738,174 @@ button:disabled {
   .About-myself {
     width: 100%;
     display: flex;
+    height: fit-content;
     flex-direction: row;
+  
+    gap: 20px;
+    border-top-right-radius: 132px;
   }
 
+
   .contact-form {
+    display: flex;
+    justify-content: center;
+    position: absolute;
     width: 100%;
+    height: 846px;
+    background-image: url("imgfile/contact\ form\ background\ shapes@2x-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--footer-background);
+    border-top-left-radius: 130px;
   }
+  
+  .contact-global-container {
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font-family);
+    color: var(--main-bg-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 52px;
+    padding-top: 140px;
+    margin-inline:  440px ;
+  }
+  
+  .contact-text-container {
+    margin-left: 25%;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #fff;
+  }
+  
+  .contact-paragraph {
+    margin-left: 22%;
+    text-align: center;
+    color: #ebebff;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+  }
+  
+  .submit-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    gap: 20px;
+  }
+  
+  .username {
+    width: 327px;
+    height: 48px;
+    background-color: var(--main-bg-color);
+    border: 1px solid #cfd8dc;
+    border-radius: 2px;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #172b4d !important;
+    padding-left: 16px;
+  }
+  
+  .email {
+    width: 327px;
+    height: 48px;
+    background-color: var(--main-bg-color);
+    border: 1px solid #cfd8dc;
+    border-radius: 2px;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+  }
+  
+  .text-area {
+    width: 327px;
+    height: 170px;
+    background-color: var(--main-bg-color);
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    padding-top: 15px;
+  }
+  
+  .button-submit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    background: var(--main-bg-color);
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+    border: 1px solid var(--main-bg-color);
+    margin-left: 10px;
+    margin-top: -10px;
+    width: 150px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 8px;
+    transition: width 2s, height 4s;
+  }
+  
+  /* -------------------------------------------FORM BUTTON HOVER-DISABLED-ACTIVE--------------------------------------------------------- */
+  .button-submit:active {
+    background: var(--background-active-button);
+    font-family: var(--main-font-family);
+    color: var(--main-bg-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+  }
+  
+  .button-submit:hover {
+    background: var(--secondary-text-color);
+    font-family: var(--main-font-family);
+    color: var(--main-bg-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .button-submit:disabled {
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: var(--button-disabled-text-color);
+  }
+  Footer
+  © 2022 GitHu
+
 }
