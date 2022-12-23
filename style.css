@@ -606,6 +606,9 @@ button:disabled {
   color: var(--button-disabled-text-color);
 }
 
+
+/* desktop */
+
 @media (min-width: 768px) {
   header {
     width: 100%;
@@ -735,15 +738,6 @@ button:disabled {
     margin-inline: 124px;
   }
 
-  .About-myself {
-    width: 100%;
-    display: flex;
-    height: fit-content;
-    flex-direction: row;
-  
-    gap: 20px;
-    border-top-right-radius: 132px;
-  }
 
 
   .contact-form {
@@ -758,7 +752,7 @@ button:disabled {
     background-color: var(--footer-background);
     border-top-left-radius: 130px;
   }
-  
+
   .contact-global-container {
     justify-content: center;
     align-items: center;
@@ -769,9 +763,9 @@ button:disabled {
     font-size: 20px;
     line-height: 52px;
     padding-top: 140px;
-    margin-inline:  440px ;
+    margin-inline: 440px;
   }
-  
+
   .contact-text-container {
     margin-left: 25%;
     font-weight: 700;
@@ -779,18 +773,20 @@ button:disabled {
     line-height: 52px;
     color: #fff;
   }
-  
+
   .contact-paragraph {
-    margin-left: 22%;
+    margin-left: 20%;
     text-align: center;
     color: #ebebff;
     font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 28px;
+    font-style: normal;
+    font-weight: 50%;
+    font-size: 20px;
+    line-height: 28px;
+    padding-top: 20px;
+    margin-bottom: 20px;
   }
-  
+
   .submit-form {
     display: flex;
     flex-direction: column;
@@ -799,7 +795,7 @@ line-height: 28px;
     padding-top: 10%;
     gap: 20px;
   }
-  
+
   .username {
     width: 327px;
     height: 48px;
@@ -816,7 +812,7 @@ line-height: 28px;
     color: #172b4d !important;
     padding-left: 16px;
   }
-  
+
   .email {
     width: 327px;
     height: 48px;
@@ -832,7 +828,7 @@ line-height: 28px;
     align-items: center;
     padding-left: 16px;
   }
-  
+
   .text-area {
     width: 327px;
     height: 170px;
@@ -849,7 +845,7 @@ line-height: 28px;
     padding-left: 16px;
     padding-top: 15px;
   }
-  
+
   .button-submit {
     display: flex;
     flex-direction: row;
@@ -865,15 +861,14 @@ line-height: 28px;
     letter-spacing: 0.03em;
     color: #6070ff;
     border: 1px solid var(--main-bg-color);
-    margin-left: 10px;
+    margin-left: 30%;
     margin-top: -10px;
     width: 150px;
     height: 48px;
     background-color: #fff;
     border-radius: 8px;
-    transition: width 2s, height 4s;
   }
-  
+
   /* -------------------------------------------FORM BUTTON HOVER-DISABLED-ACTIVE--------------------------------------------------------- */
   .button-submit:active {
     background: var(--background-active-button);
@@ -884,19 +879,22 @@ line-height: 28px;
     font-size: 17px;
     line-height: 24px;
   }
-  
+
   .button-submit:hover {
-    background: var(--secondary-text-color);
     font-family: var(--main-font-family);
-    color: var(--main-bg-color);
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
-    width: 300px;
-    height: 300px;
+    color: var(--black-color);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity 9s ease-in-out;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #f00, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #f00)
   }
-  
+
   .button-submit:disabled {
     font-family: var(--main-font-family);
     font-style: normal;
@@ -905,7 +903,5 @@ line-height: 28px;
     line-height: 24px;
     color: var(--button-disabled-text-color);
   }
-  Footer
-  © 2022 GitHu
 
 }
